@@ -79,6 +79,18 @@ NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/src/ngx_http_echo_module.c"
 ## Nginx echo Module 运行成功
 ![image](https://ws2.sinaimg.cn/large/005LOzcmly1fgjo0r1a5dj30yf06tmxv.jpg)
 
+<font color="red">
+nginx添加第三方模块的正确姿势：先查看你已经安装的nginx模块！然后安装新东西的时候，要把已安装的，再次配置。
+
+nginx第三方模块安装方法：
+```./configure --prefix=/path  --add-module=/path```  
+
+查看已安装的模块，使用```nginx -V```查看
+
+参考：http://blog.csdn.net/cxm19881208/article/details/64441890
+</font>
+
+
 # 如果这个repo对你有帮助  欢迎star fork   Thanks
 > ## 参考文档
 > 1. http://wiki.nginx.org/Configuration
