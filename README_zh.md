@@ -84,7 +84,7 @@ NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/src/ngx_http_echo_module.c"
 先查看你已经安装的nginx模块！然后安装新东西的时候，要把已安装的，再次配置。
 
 nginx第三方模块安装方法：
-```./configure --prefix=/path  --add-module=/path```  
+```./configure --prefix=/path  --add-module=/path```  <font color='red'>（需要带上原来的配置参数，不然会覆盖安装）</font>
 
 查看已安装的模块，使用```nginx -V```查看
 
